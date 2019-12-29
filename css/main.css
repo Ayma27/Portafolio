@@ -29,7 +29,7 @@ h1 {
 h2 {
   font-size: 42px;
   font-weight: 300;
-  color: #545454;
+  color: #f4f4f4;
 }
 
 h3 {
@@ -37,12 +37,18 @@ h3 {
   font-weight: 300;
   color: #ffffff;
 }
-
+h4 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #545454;
+}
 p {
-  color: #7e7e7e;
+  color: #f2f2f2;
   font-size: 16px;
 }
-
+blockquote {
+color: #FF8A65;   
+}
 
 /*-------------------Margins----------------*/
 .margin-0 {
@@ -89,7 +95,7 @@ p {
     -moz-user-select: none;
     background-image: none;
     border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 2px;
+    border-radius: 10px;
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
@@ -103,7 +109,7 @@ p {
 }
 
 .btn-lg {
-    border-radius: 2px;
+    border-radius: 10px;
     font-size: 18px;
     line-height: 1.33;
     padding: 14px 22px;
@@ -161,8 +167,8 @@ p {
   color: #13c4af;
 }
 
-.blue {
-  color: #4eacdd;
+.pink {
+  color: #FF8A65;
 }
 
 
@@ -171,10 +177,13 @@ p {
    Navigation styles
    ========================================================================== */
 .navbar-inverse {
-    background-color: #4eabde;
+    background-color: #FF8A65;
     border-color: rgba(0, 0, 0, 0);
 }
-
+#fondo {
+    background-color: black !important;
+    border-color: rgba(0, 0, 0, 0);
+}
 .navbar-brand {
     padding: 0px;
 }
@@ -193,11 +202,11 @@ p {
     border-color: rgba(0, 0, 0, 0);
 }
 
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+.navbar-inverse .navbar-toggle .navbar-inverse-about:hover, .navbar-inverse .navbar-toggle .navbar-inverse-about:focus {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar-inverse .navbar-collapse .navbar-inverse-about, .navbar-inverse .navbar-form .navbar-inverse-about {
     border-color: rgba(0, 0, 0, 0);
     border: 0px;
     box-shadow: 0 0px 0 rgba(0, 0, 0, 0.0) inset;
@@ -213,16 +222,21 @@ p {
    Main styles
    ========================================================================== */
 #header {
-  background: #4eacdd;
+  background: #FF8A65;
   height: 650px;
   overflow: hidden;
 }
+#about {
+background: black;
+}
 #logo {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   margin-top: 10px;
 }
-
+#laborum {
+  color: black;
+}
 
 .header-text {
   padding-top: 175px;
@@ -231,10 +245,28 @@ p {
 .header-img {
   margin-top: -100px;
 }
+.aymara-img {
+  margin-top: 0;
+  height: 600px;
+  weight: 350px;
+}
+#mail-aymara{
+color: black;
+}
+#about-me, #about-me-3 {
+color: white;
+}
 
 #main1 {
   background: black;
   padding-top: 140px;
+  min-height: 650px;
+  overflow: hidden;
+  height: auto;
+}
+#main1-about {
+  background: black;
+  padding-top: 80px;
   min-height: 650px;
   overflow: hidden;
   height: auto;
@@ -269,10 +301,6 @@ p {
     position: absolute;
 }
 
-#message {
-  padding: 100px 0px;
-  background: #13c4af;
-}
 
 #bottom {
   padding: 220px 0px;
